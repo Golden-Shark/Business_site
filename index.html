@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+    <div class="cookie">
+        <div class="closeCookie">
+            <img src="img/close-cookie.png" alt="" onclick="closeCookie()">
+        </div>
+        <p>This website uses cookies to ensure you get the best experience on our website. They also allow us to analyze user behavior in order to constantly improve the website for you.</p>
+        <div class="btn">
+            <button class="accept">Accept</button>
+            <button class="decline">Decline</button>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <div class="closeForm">
+            <img src="img/close-cookie.png" alt="" onclick="closeContact()">
+        </div>
+        <form action="" method="post">
+            <label for="name">Name<span>*</span></label>
+            <input type="text" name="" id="name" placeholder="Enter name" class="main">
+            <span class="fields">This field is required.</span>
+            <label for="mail">Email<span>*</span></label>
+            <input type="email" name="" id="mail" placeholder="Enter email" class="main">
+            <span class="fields">This field is required.</span>
+            <label for="phone">Phone number<span>*</span></label>
+            <input type="number" name="" id="phone" placeholder="+1 900 000 00 00 " class="main">
+            <span class="fields">This field is required.</span>
+            <label for="company">Company</label>
+            <input type="text" name="" id="company" placeholder="Enter company">
+            <label for="website">Website/Store URL</label>
+            <input type="text" name="" id="website" placeholder="Enter Website/Store URL">
+            <span class="allFields">Please fill in all required fields</span>
+            <p>By submitting this form you are agreeing to Budss’s <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a></p>
+            <button type="button" onclick="sendForm()" class="sendContact">Contact sales</button>
+        </form>
+    </div>
+
+    <div class="successForm">
+        <div class="closeMessage">
+            <img src="img/close-cookie.png" alt="" onclick="closeMessage()">
+        </div>
+        <img src="img/thanks.png" alt="" class="thanksImg">
+        <h5>Thank you!</h5>
+        <p>Thank you, we have received your application and will contact you soon!</p>
+        <button onclick="closeMessage()">Super!</button>
+    </div>
+
+    <header>
+        <div class="mob-menu">
+            <div class="closeMenu">
+                <img src="img/closeMenu.png" alt="" onclick="closeMenu()">
+            </div>
+            <button>Contact sales</button>
+            <ul>
+                <li>For Business</li>
+                <li>For Customers</li>
+                <li>Privacy Policy</li>
+                <li>Terms Of Use - Seller</li>
+                <li>Terms of Use - Sellers &amp; Customers</li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li class="nav active" onclick="changeActiveNav(0)">For Business</li>
+                <li class="nav" onclick="changeActiveNav(1)">For Customers</li>
+            </ul>
+        </nav>
+        <div class="hero-main">
+            <div class="logo-btn">
+                <img src="img/logo.png" alt="" class="logo">
+                <button onclick="openContact()">Contact sales</button>
+            </div>
+            <div class="block">
+                <div class="content">
+                    <h1>Everyone<br>is an Influencer</h1>
+                    <p>Budss is a payments as a service and WOM engine dedicated to acquisition and retention of customers to your business.</p>
+                    <button onclick="openContact()">Contact sales</button>
+                </div>
+                <img id="hero" src="img/hero.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <div class="about">
+        <h1>About Budss</h1>
+        <div class="content">
+            <div class="left-content">
+                <div class="text">
+                    <h4>Payment as a service, powered seamlessly by our network of shoppers</h4>
+                    <img src="img/about-figure.png" alt="">
+                </div>
+                <img src="img/about-logo.png" alt="">
+            </div>
+            <div class="right-content">
+                <div class="block">
+                    <img src="img/about-icon-1.png" alt="">
+                    <h2>Contactless</h2>
+                    <p>Budss uses near field communication (NFC) for making contactless payments.</p>
+                </div>
+                <div class="block">
+                    <img src="img/about-icon-2.png" alt="">
+                    <h2>Increased Buying Power</h2>
+                    <p>Returning customers spend up to 3X more.</p>
+                </div>
+                <div class="block">
+                    <img src="img/about-icon-3.png" alt="">
+                    <h2>Analytics &amp; Insights</h2>
+                    <p>Gain a holistic view into your customers&rsquo; buying behavior &amp; purchasing patterns. </p>
+                </div>
+                <div class="block">
+                    <img src="img/about-icon-4.png" alt="">
+                    <h2>Fraud Protection</h2>
+                    <p>Budss handles all payments with a fraud prevention algorithm to flag high risk purchases &amp; a user set PIN code to keep payment info secure. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="how-budds">
+        <div class="background">
+            <div class="row first">
+                <p class="green el1">How Budss Works<span>How Budss Works</span></p>
+                <p class="green el2">How Budss Works<span>How Budss Works</span></p>
+            </div>
+            <div class="row second">
+                <p class="violet el3">How Budss Works<span>How Budss Works</span></p>
+                <p class="violet el4">How Budss Works<span>How Budss Works</span></p>
+            </div>
+            <div class="row third">
+                <p class="orange el5">How Budss Works<span>How Budss Works</span></p>
+                <p class="orange el6">How Budss Works<span>How Budss Works</span></p>
+            </div>
+        </div>
+        <img src="img/Silver.png" alt="">
+    </div>
+
+    <div class="advantages">
+        <div class="advantage">
+            <h1>15%</h1>
+            <p>Increase in Purchase Amount</p>
+        </div>
+        <div class="advantage">
+            <h1>30%</h1>
+            <p>Growth in Annual Sales</p>
+        </div>
+        <div class="advantage">
+            <h1>10%</h1>
+            <p>Growth in New Customers</p>
+        </div>
+    </div>
+
+    <div class="why-budds">
+        <h1>Why Budss</h1>
+        <div class="text-budds">
+            <p>We Provide Advanced Payment Solutions To Grow Your Business</p>
+            <img src="img/about-figure.png" alt="">
+        </div>
+        <div class="blocks">
+            <div class="long-block block-1">
+                <img src="img/image1.png" alt="" id="img1">
+                <div class="content content-1">
+                    <h1>Turn your customers into loyal influencers</h1>
+                    <p>Budss helps businesses harness the exponential power of loyal customers for acquisition and retention.</p>
+                </div>
+            </div>
+            <div class="small-block block-2">
+                <img src="img/image2-1.png" alt="" id="img2-1">
+                <img src="img/image2-2.png" alt="" id="img2-2">
+                <img src="img/image2-3.png" alt="" id="img2-3">
+                <div class="content content-2">
+                    <h1>Harness the power of buying in bulk</h1>
+                    <p>Get at least 2X more sales with Budss Buying Groups. Your customer base will grow exponentially as your customers add their friends &amp; family to your personalized group.</p>
+                </div>
+            </div>
+            <div class="small-block block-3">
+                <div class="content content-3">
+                    <h1>Supercharge Loyalty With Instant Cash Back</h1>
+                    <p>Budss allows for shoppers to earn immediate cash back at their favorite stores.</p>
+                </div>
+                <img src="img/image3.png" alt="" id="img3">
+            </div>
+            <div class="long-block block-4">
+                <div class="content content-4">
+                    <h1>Seasoned with AI and Gamification</h1>
+                    <p>AI programming creates a personalized customer journey, offering recommendations for their next purchase and optimizing rewards for after purchase.</p>
+                </div>
+                <img src="img/image4.png" alt="" id="img4">
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="btn-contact">
+            <h1>Let  Your Business Grow</h1>
+            <button onclick="openContact()">Contact sales</button>
+        </div>
+
+        <div class="text-networks">
+            <div class="content">
+                <h1>Your Brand Awareness Maters</h1>
+                <p>Budss is a husle free solution to put your brand on any digital surface including Instagram, Facebook, Twitter and TikTok</p>
+            </div>
+            <div class="network">
+                <img src="img/Facebook.png" alt="" id="network1">
+                <img src="img/Twitter.png" alt="" id="network2">
+                <img src="img/Instagram.png" alt="" id="network3">
+                <img src="img/TikTok.png" alt="" id="network4">
+            </div>
+        </div>
+
+        <div class="brands">
+            <img id="brand1" src="img/brand1.png" alt="">
+            <img id="brand2" src="img/brand2.png" alt="">
+            <img id="brand3" src="img/brand3.png" alt="">
+            <img id="brand4" src="img/brand4.png" alt="">
+            <img id="brand5" src="img/brand5.png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="top">
+            <div class="left">
+                <img src="img/logo.png" alt="">
+                <ul class="footer-nav">
+                    <li>For Business</li>
+                    <li>For Customers</li>
+                </ul>
+                <button onclick="openContact()">Contact sales</button>
+            </div>
+            <div class="right">
+                <img src="img/appstore.png" alt="">
+                <img src="img/googleplay.png" alt="">
+            </div>
+        </div>
+        <div class="bottom">
+            <p>© Copyright 2023, All Rights Reserved by Budss</p>
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms Of Use - Seller</a></li>
+                <li><a href="">Terms of Use - Sellers &amp; Customers</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
