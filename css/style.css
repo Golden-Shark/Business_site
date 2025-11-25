@@ -617,6 +617,10 @@ header .mob-menu {
         margin-bottom: 51.6%;
     }
 
+    header .mob-menu button:active {
+        background: #4800A1;
+    }
+
     header .mob-menu ul {
         width: 100%;
         display: flex;
@@ -1973,4 +1977,5 @@ footer .bottom ul {
 footer .bottom ul li a {
     color: #B9B9B9;
     text-decoration: underline;
+
 }
